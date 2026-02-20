@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="min-h-screen bg-blanc text-noir">
       <Header />
-      <main>
+      <main className="pb-20 md:pb-0">
         <Hero />
         <Skills />
         <Experience />
