@@ -16,6 +16,9 @@ function Header() {
 
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-10">
+          <a href="#competences" className="nav-link text-sm font-medium">
+            Compétences
+          </a>
           <a href="#experience" className="nav-link text-sm font-medium">
             Expérience
           </a>
@@ -48,7 +51,10 @@ function Header() {
         className={`md:hidden overflow-hidden transition-all duration-300 ease-out ${menuOpen ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'}`}
       >
         <div className="px-6 py-4 flex flex-col gap-3 bg-blanc border-t border-noir/5">
-          <a href="#experiences" className="nav-link py-2" onClick={() => setMenuOpen(false)}>
+          <a href="#competences" className="nav-link py-2" onClick={() => setMenuOpen(false)}>
+            Compétences
+          </a>
+          <a href="#experience" className="nav-link py-2" onClick={() => setMenuOpen(false)}>
             Expérience
           </a>
           <a href="#projets" className="nav-link py-2" onClick={() => setMenuOpen(false)}>
