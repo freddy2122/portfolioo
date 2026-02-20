@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-blanc text-noir antialiased;
+  }
+}
+
+@layer utilities {
+  .animation-delay-200 { animation-delay: 200ms; }
+  .animation-delay-300 { animation-delay: 300ms; }
+  .animation-delay-400 { animation-delay: 400ms; }
+  .animation-delay-500 { animation-delay: 500ms; }
+  .animation-delay-600 { animation-delay: 600ms; }
+  .animation-delay-700 { animation-delay: 700ms; }
+  .animation-delay-800 { animation-delay: 800ms; }
+}
+
+/* Header link underline animation */
+.nav-link {
+  @apply relative text-gris hover:text-accent transition-colors duration-300;
+}
+.nav-link::after {
+  content: '';
+  @apply absolute left-0 bottom-0 w-full h-0.5 bg-accent origin-left scale-x-0 transition-transform duration-300;
+}
+.nav-link:hover::after {
+  @apply scale-x-100;
+}
