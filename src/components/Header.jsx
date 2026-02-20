@@ -12,9 +12,7 @@ function Header() {
       <header className="fixed top-0 left-0 right-0 z-50 bg-blanc/90 backdrop-blur-md border-b border-noir/5 shadow-sm">
         <nav className="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
           <a href="#" className="flex items-center gap-2 text-noir font-bold tracking-tight">
-            <span className="w-9 h-9 rounded-lg bg-accent text-blanc flex items-center justify-center text-sm font-extrabold">
-              A
-            </span>
+            
             <span className="inline">AKOUTA Deo</span>
           </a>
 
